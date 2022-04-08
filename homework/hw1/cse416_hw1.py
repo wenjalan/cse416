@@ -49,17 +49,17 @@ from sklearn.metrics import mean_squared_error
 
 train_basic_pred = basic_model.predict(train_data[basic_features])
 train_rmse_basic = mean_squared_error(train_data['price'], train_basic_pred, squared=False)
-print('Train RMSE Basic: ' + str(train_rmse_basic))
+# print('Train RMSE Basic: ' + str(train_rmse_basic))
 
 train_advanced_pred = advanced_model.predict(train_data[advanced_features])
 train_rmse_advanced = mean_squared_error(train_data['price'], train_advanced_pred, squared=False)
-print('Train RMSE Advanced: ' + str(train_rmse_advanced))
+# print('Train RMSE Advanced: ' + str(train_rmse_advanced))
 
 # Q6
 val_basic_pred = basic_model.predict(val_data[basic_features])
 val_rmse_basic = mean_squared_error(val_data['price'], val_basic_pred, squared=False)
-print('Val RMSE Basic: ' + str(val_rmse_basic))
+# print('Val RMSE Basic: ' + str(val_rmse_basic))
 
 val_advanced_pred = advanced_model.predict(val_data[advanced_features])
 val_rmse_advanced = mean_squared_error(val_data['price'], val_advanced_pred, squared=False)
-print('Val RMSE Advanced: ' + str(val_rmse_advanced))
+# print('Val RMSE Advanced: ' + str(val_rmse_advanced))
