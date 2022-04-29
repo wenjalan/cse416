@@ -1,0 +1,14 @@
+1.
+a. Incorrect. Decreasing the number of minimum samples in a leaf will increase overfitting, which is the issue Sasha is experiencing. Sasha should increase the minimum number of samples a leaf needs.
+
+b. Incorrect. Wuwei is misunderstanding a key benefit of a Decision Tree classifier, which is explainability. Wuwei is mistaking this explainability for a lack of preprocessing. For example, a column with "Personality type" may well need be preprocessed to be understood by whichever learning library she is using.
+
+c. Incorrect. Aric should make random samples of the original dataset, not exact copies.
+
+d. Correct. Random Forests can be trained in parallel.
+
+e. Incorrect. Decision Tree classifiers do not benefit from normalization, as they use splits between data points to make decisions, not regression formulas.
+
+2.
+
+3. Random Forest. With a max depth of 25, a Decision Tree may overfit, whereas a Random Forest is more robust to overfitting due to its randomized nature.
