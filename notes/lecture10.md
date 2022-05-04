@@ -1,0 +1,1 @@
+Content in Spring 2022 skips lecture 10. Proceed to lecture 11.
